@@ -11,10 +11,10 @@ With the power of ML, we can help you find out if another profile is trustworthy
 """
 
 num_followers = st.slider("Number of Followers", 1, 5000, 2000)
-inf_score = st.slider("Influence Score", 1, 100, 9)
-num_posts = st.slider("Posts", 1, 100, 9)
+inf_score = st.slider("Influence Score", 1, 7000, 9)
+num_posts = st.slider("Posts", 1, 1500, 9)
 engagement_rate = st.slider("Engagement Rate", 1, 100, 9)
-total_likes = st.slider("Total Likes", 1, 100, 9)
+total_likes = st.slider("Total Likes", 1, 4000, 9)
 
 trust_button = st.button("Investigate Profile!")
 st.write(trust_button)

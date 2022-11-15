@@ -10,7 +10,13 @@ import streamlit as st
 With the power of ML, we can help you find out if another profile is trustworthy or not below:
 """
 
-total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
+num_followers = st.slider("Number of Followers", 1, 5000, 2000)
+inf_score = st.slider("Influence Score", 1, 100, 9)
+num_posts = st.slider("Posts", 1, 100, 9)
+engagement_rate = st.slider("Engagement Rate", 1, 100, 9)
+total_likes = st.slider("Total Likes", 1, 100, 9)
+
 trust_button = st.button("Investigate Profile!")
 st.write(trust_button)
+
+st.header("ANSWER: DO NOT TRUST")
